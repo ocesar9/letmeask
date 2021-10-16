@@ -1,4 +1,3 @@
-import illustration from "../assets/images/illustration.svg";
 import logoImg from "../assets/images/logo.svg";
 import googleIconImg from "../assets/images/google-icon.svg";
 import { useHistory } from "react-router-dom";
@@ -42,7 +41,13 @@ export function Home() {
     const roomRef = await database.ref(`rooms/${roomCode}`).get();
 
     if(!roomRef.exists()){
-      toast.error("Room does not exists!");
+      toast.dark("Room not founded!");
+
+      return;
+    }
+
+    if(roomRef.val().endedAt){
+      toast.dark("Room cloded!");
 
       return;
     }
