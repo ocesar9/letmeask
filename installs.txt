@@ -1,0 +1,12 @@
+yarn create react-app letmeask --template typescript
+
+yarn add firebase@8.6.7
+
+yarn add node-sass@5.0.0
+
+yarn add react-router-dom
+
+yarn add @types/react-router-dom -D
+
+yarn add classesnames
+

@@ -1,11 +1,10 @@
 import { Link,useHistory} from "react-router-dom";
-import illustration from "../assets/images/illustration.svg";
 import logoImg from "../assets/images/logo.svg";
 import { Button } from "../components/Button";
 import '../styles/auth.scss';
 import { useAuth } from "../hooks/useAuth";
 import {FormEvent, useState} from "react";
-import { auth, database } from "../services/firebase";
+import { database } from "../services/firebase";
 import { Sidebar } from "../components/Sidebar";
 
 export function NewRoom() {
@@ -32,7 +31,7 @@ export function NewRoom() {
               authorId: user?.id,
             });
 
-            history.push(`/rooms/${firebaseRoom.key}`)
+            history.push(`/admin/rooms/${firebaseRoom.key}`)
         }
 
 
