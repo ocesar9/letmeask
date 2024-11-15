@@ -34,6 +34,4 @@ O Projeto consiste numa aplicacão que cria salas de perguntas online, onde exis
 
 # Autor
 
-Júlio César de Oliveira Guimarães
-
-https://www.linkedin.com/in/j%C3%BAlio-c%C3%A9sar-de-oliveira-guimar%C3%A3es-183110162/
+[Júlio Guimarães](https://github.com/ocesar9)
