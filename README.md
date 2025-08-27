@@ -1,7 +1,7 @@
 # Letmeask 🙋‍♀️
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/lioc3sar/letmeask/blob/master/LICENSE)
-[![Firebase](https://img.shields.io/badge/Firebase-hosting-orange)](https://letmeask-183d0.web.app/)
+[![Firebase](https://img.shields.io/badge/letmeask-183d0)](https://letmeask-183d0.web.app/)
 
 ## 📋 Sobre o Projeto
 
@@ -65,6 +65,13 @@ Diagrama conceitual mostrando a organização dos dados no Firebase, incluindo r
 - **Real-time Listeners** - Sincronização em tempo real
 - **React Router** - Navegação entre páginas
 
+## 🌐 Arquitetura e Deploy
+
+- **Frontend:** [Firebase Hosting](https://firebase.google.com/docs/hosting) - CDN global com SSL automático
+- **Backend:** [Firebase](https://firebase.google.com/) - BaaS (Backend as a Service)
+- **Database:** [Firebase Realtime Database](https://firebase.google.com/docs/database) - NoSQL em tempo real
+- **Authentication:** [Firebase Auth](https://firebase.google.com/docs/auth) - OAuth com Google
+
 ## 📦 Como Executar o Projeto
 
 ### Pré-requisitos
@@ -103,9 +110,29 @@ yarn start
 # Acesse http://localhost:3000 no seu navegador
 ```
 
+
+## 🎯 Conceitos Aplicados
+
+- **Real-time Database** - Sincronização instantânea de dados
+- **Authentication Flow** - Fluxo de autenticação com OAuth
+- **Context API** - Compartilhamento de estado entre componentes
+- **Custom Hooks** - useAuth, useRoom para lógica reutilizável
+- **TypeScript** - Tipagem estática para maior robustez
+- **Component Architecture** - Componentização e reutilização
+- **Firebase Integration** - Integração completa com ecossistema Firebase
+- **Responsive Design** - Interface adaptável para diferentes dispositivos
+
+## 🔒 Segurança
+
+- **Autenticação obrigatória** para criação de salas
+- **Regras de segurança** no Firebase Database
+- **Validação de permissões** no frontend e backend
+- **Sanitização de dados** para prevenir XSS
+
 ## 📄 Licença
 
 Este projeto está sob licença MIT. Veja o arquivo [LICENSE](https://github.com/lioc3sar/letmeask/blob/master/LICENSE) para mais detalhes.
+
 
 ## 👨‍💻 Autor
 
